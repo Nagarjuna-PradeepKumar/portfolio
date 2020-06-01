@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>HELLO It's Me NAGARJUNA</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1></h1>
+            <ul id="navlist">
+                <li><a data-page="about" onclick=scrollWin(event,0) href="#">About</a></li>
+                <li><a data-page="skill" onclick=scrollWin(event,1) href="#" >Skills</a></li>
+                <li><a data-page="career" onclick=scrollWin(event,2) href="#">career</a></li>
+                <li><a data-page="contact" onclick=scrollWin(event,3) href="#">Contact</a></li>
+                <div class="bubble"></div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section data-index="0" class="about">            
+            
+                <div class="profilepic">
+                    <img src="./picture.jpg" alt="profilepic">
+                    <div class="namecontent"><p><span class='bigger'>‘</span>&nbsp;<small> Hi, I'm</small><br> &nbsp;&nbsp;&nbsp;&nbsp; NAGARJUNA&nbsp;<span class='bigger'>,</span></p></div>
+                </div>
+                <div class="aboutleftcontent">
+                    <p style="text-align: justify; line-height: 150%;"><span class="big">A</span>n organized, ever learning professional fueled by <small> [ 94 RON gasoline of ] </small>  passion for web-development and mechanical design, creating an everlasting impact on people, community and business.</p>
+                    <p style="line-height:2rem;"><span class='big'>‘‘</span>&emsp;<span class="big">M</span>echanical engineer by education, with <br>&emsp;&emsp;&emsp;<span style="color: lawngreen;">- </span><small>const grades = 8.7 CGPA</small><br>&emsp;&emsp;&emsp;&emsp;<span class="big">S</span>elf taught Web-Developer.<br>&emsp;&emsp;&emsp;&emsp;&emsp;<small><span style="color: lawngreen;">- </span>MERN stack, HTML, CSS, Javascript</small>&emsp;<span class='big'>,,</span></p></div>            
+            <img src="./developer.svg" alt="svg" class="aboutright"></img>
+        </section>
+        <section data-index="1" class="skill">
+            <div class="skillmechcont">
+                <h3><span class="big">G</span>eneral competencies</h3>
+                <ul style="padding-left: 5%;">
+                    <li>Project management</li>
+                    <li>Perseverance</li>
+                    <li>Organisation</li>
+                </ul>
+                <h3><span class="big">M</span>echanical skills</h3>
+                <ul style="padding-left: 5%;">
+                    <li>Modelling and drafting with Solidworks</li>
+                    <li>Special purpose machine building and trouble shooting</li>
+                    <li>DFMEA</li>
+                </ul>
+
+            </div>
+            <div class="skillmechpic">
+                <img src="./mech.svg">
+            </div>
+            <div class="skillcscont">
+                <h3><span class="big">I</span>nformation Technology skills</h3>
+                <ul style="padding-left: 5%;">
+                    <li>HTML, CSS - flex,Grid</li>
+                    <li>Bootstrap</li>
+                    <li>Javascript</li>
+                    <li>ReactJs - Hooks,Redux</li>
+                    <li>NodeJs - HTTP,Websockets</li>
+                    <li>MongoDB -aggregation </li>
+                </ul>
+            </div>
+            <div class="skillcspic">
+                <img src="./codeing.svg">
+            </div>
+        </section>
+
+        <section data-index="2" class="career">
+            <div class="careerkris">
+                <h3><span class="big">K</span>risam Automation</h3>
+                <ul style="padding: 4% 0% 0% 5%; text-align: justify;">
+                    <li>Sucessfully Built and proved MCB testing station for Schneider Electric.</li>
+                    <li>Engaged in proving of medical drains of body fluids machine for medical application.</li>
+                    <li>Worked in building and proving assembly stations for Royal Enfield.</li>
+                </ul>
+            </div>
+            <div class="careerank">
+                <h3><span class="big">A</span>nkusam Engineering</h3>
+                <ul style="padding: 4% 0% 0% 5%; text-align: justify;line-height: 150%;">
+                    <li>Design and drafting of pipe bending machines</li>
+                    <li>Conceptual modelling of special purpose machines.</li>
+                </ul>
+            </div>
+            <div class="careerindpic">
+                <img src="./factory.svg" alt="factory">
+            </div>
+            <div class="careerwinpic">
+                <img src="./winner.svg" alt="win">
+            </div>
+        </section>
+        <section data-index="3" class="contact">
+            <div class="contactleft">
+                <h1>Get in touch !</h1>
+                <img src="./contact.svg" alt="contact" style="width: 50%">
+            </div>
+            <div class="contactright">
+                <div class="aboutleftlinkedin"><img src="./phone.svg" alt="Phone-no" style="height: 35px;">&emsp;&emsp;+91&nbsp; 9788-064-445</div>
+                <div class="aboutleftlinkedin"><img src="./mail.svg" alt="E-Mail" style="height: 35px;">&emsp;&emsp;<a href="mailto:nagarjun70@gmail.com">nagarjun70@gmail.com</a> </div>
+                <div class="aboutleftgithub"><img src="./linkedin.svg" alt="linkedin" style="height: 35px; color: ivory;">&emsp;&emsp;<a href="https://www.linkedin.com/in/nagarjuna-pradeep-kumar-a2bb49129/" target="_blank">My LinkedIn</a></div>
+                <div class="aboutleftgithub"><img src="./github.png" alt="GitHub" style="height: 35px; color: ivory;">&emsp;&emsp;<a href="https://github.com/Nagarjuna-PradeepKumar" target="_blank">My GitHub</a></div>
+            </div>
+        </section>
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>
+
+
+
