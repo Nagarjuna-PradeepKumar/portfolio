@@ -63,12 +63,10 @@ a {
 
 section {
   min-height: 100vh;
-  /* max-height: 90vh; */
 }
 
 .about {
     min-height: fit-content;
-    /* max-height: fit-content; */
     padding: 5px 5px;
     display: grid;
     background: linear-gradient(to right, #cc4d99, #3c1053);
@@ -108,7 +106,6 @@ section {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    /* background-color: rgb(193, 0, 252); */
 }
 
 .aboutleftfooter div {
@@ -117,7 +114,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  /* background-color: rgb(252, 0, 0); */
 }
 
 .aboutright {
@@ -149,7 +145,6 @@ section {
     align-items: center;
 }
 .skillmechpic img{
-    /* background-color: greenyellow; */
     height: 50%;
     width: 70%;
 }
@@ -162,7 +157,6 @@ section {
     grid-area:professionalcspic ;
 }
 .skillcspic img{
-    /* background-color: greenyellow; */
     height: 50%;
     width: 70%;
 }
@@ -225,18 +219,14 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    /* background-color: rgb(160, 0, 252); */
   }
   .contactright{
       grid-area: contactright;
-      /* margin-top: 10vh; */
-      /* min-height: 50vh; */
     color: honeydew;
     display: flex;
     flex-direction:column;
     justify-content: center;
     align-items:flex-start;
-    /* background-color: rgb(160, 0, 252); */
   }
   .contactright a{
       color: inherit;
@@ -251,7 +241,6 @@ section {
     flex-direction:row;
     justify-content: center;
     align-items:center;
-    /* background-color: rgb(160, 0, 252); */
   }
 .bubble {
   position: fixed;
@@ -369,7 +358,6 @@ nav h1 {
     justify-content:space-evenly;
     ;
     align-items: center;
-    /* background-color: rgb(193, 0, 252); */
   }
 
   .aboutleftfooter {
@@ -378,7 +366,6 @@ nav h1 {
     flex-direction: row;
     justify-content: center;
     align-items:flex-end;
-    /* background-color: rgb(160, 0, 252); */
     flex: 1;
   }
 
@@ -387,7 +374,6 @@ nav h1 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    /* background-color: rgb(252, 0, 0); */
   }
   .aboutright {
       object-fit: contain;
@@ -415,8 +401,6 @@ nav h1 {
   flex-direction:column;
   justify-content:flex-start;
   align-items:flex-start;
-
-  /* background-color: rgb(160, 0, 252); */
 }
 
   .bubble {
