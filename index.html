@@ -1,115 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <title>HELLO It's Me NAGARJUNA</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <h1></h1>
-            <ul id="navlist">
-                <li><a data-page="about" onclick=scrollWin(event,0) href="#">About</a></li>
-                <li><a data-page="skill" onclick=scrollWin(event,1) href="#" >Skills</a></li>
-                <li><a data-page="career" onclick=scrollWin(event,2) href="#">career</a></li>
-                <li><a data-page="contact" onclick=scrollWin(event,3) href="#">Contact</a></li>
-                <div class="bubble"></div>
-            </ul>
-        </nav>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Nagarjuna</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
     <main>
-        <section data-index="0" class="about">            
-            
-                <div class="profilepic">
-                    <img src="./picture.jpg" alt="profilepic">
-                    <div class="namecontent"><p><span class='bigger'>‘</span>&nbsp;<small> Hi, I'm</small><br> &nbsp;&nbsp;&nbsp;&nbsp; NAGARJUNA&nbsp;<span class='bigger'>,</span></p></div>
+      <section id="intorduction">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-6 py-5">
+              <h5 class="white-light mb-4">
+                HI THERE <img src="./images/emoji.svg" alt="hi" /> I'M
+              </h5>
+              <h1 class="user-name mb-4">Nagarjuna</h1>
+              <h6 class="theme-color mb-4">FULL STACK WEB DEVELOPER.</h6>
+              <p class="white-light">
+                I'm a professional full stack web developer, self taught and a knack to deliver the
+                best possible everytime.
+              </p>
+              <div class="button-area">
+                <a class="primary-button" href="#contact">Contact Me</a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 py-5">
+              <img src="./images//naga.png" alt="nagarjuna" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="aboutme">
+        <div class="container">
+          <div class="row align-items-center px-0 px-lg-5">
+            <div class="col-12 col-lg-6 py-5 order-2 order-lg-1">
+              <img src="./images/me.png" alt="nagarjuna fullstack developer" />
+            </div>
+            <div class="col-12 col-lg-6 py-5 order-1 order-lg-2">
+              <div class="sub-title">
+                <span>Who I am</span>
+              </div>
+              <div class="content-title mt-2">
+                <h2>About Me</h2>
+              </div>
+              <div class="content mt-4">
+                <p>
+                  I'm a full stack web developer with a passion for creating beautiful and intuitive
+                  user experiences. I have a strong background in full stack development and have
+                  worked with various frameworks and libraries.
+                </p>
+                <p>
+                  I work on building full stack web application using React, Vuejs, Node.js,
+                  Express.js, MongoDB, and PostgreSQL.
+                </p>
+                <p>
+                  Being a diligent, hardworking and result oriented, I always work towards achieving
+                  best result on each project I lay my hands on.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="myservices" class="py-5">
+        <div class="container">
+          <div class="sub-title text-center pt-2" style="margin-left: 0">
+            <span> What I do</span>
+          </div>
+          <div class="content-title mt-2 mb-5 mb-lg-0">
+            <h2 class="text-center">My Services</h2>
+          </div>
+          <div class="row mt-5 justify-content-center py-5">
+            <div class="col-12 col-lg-4 mt-lg-0">
+              <div class="custom-card">
+                <div class="custom-card-image">
+                  <img src="./images/world-wide-web.png" alt="website development" />
                 </div>
-                <div class="aboutleftcontent">
-                    <p style="text-align: justify; line-height: 150%;"><span class="big">A</span>n organized, ever learning professional fueled by <small> [ 94 RON gasoline of ] </small>  passion for web-development and mechanical design, creating an everlasting impact on people, community and business.</p>
-                    <p style="line-height:2rem;"><span class='big'>‘‘</span>&emsp;<span class="big">M</span>echanical engineer by education, with <br>&emsp;&emsp;&emsp;<span style="color: lawngreen;">- </span><small>const grades = 8.7 CGPA</small><br>&emsp;&emsp;&emsp;&emsp;<span class="big">S</span>elf taught Web-Developer.<br>&emsp;&emsp;&emsp;&emsp;&emsp;<small><span style="color: lawngreen;">- </span>MERN stack, VueJs, HTML, CSS, Javascript</small>&emsp;<span class='big'>,,</span></p></div>            
-            <img src="./developer.svg" alt="svg" class="aboutright"></img>
-        </section>
-        <section data-index="1" class="skill">
-            <div class="skillmechcont">
-                <h3><span class="big">G</span>eneral competencies</h3>
-                <ul style="padding-left: 5%;">
-                    <li>Project management</li>
-                    <li>Perseverance</li>
-                    <li>Organisation</li>
-                </ul>
-                <h3><span class="big">M</span>echanical skills</h3>
-                <ul style="padding-left: 5%;">
-                    <li>Modelling and drafting with Solidworks</li>
-                    <li>Special purpose machine building and trouble shooting</li>
-                    <li>DFMEA</li>
-                </ul>
-
+                <div class="custom-card-title">
+                  <h5>Website Development</h5>
+                </div>
+                <div class="custom-card-text">
+                  <p>
+                    Creating well designed and functional and blazing fast websites with the latest
+                    technologies, optimised for mobile and desktop.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="skillmechpic">
-                <img src="./mech.svg">
+            <div class="col-12 col-lg-4 mt-5 mt-lg-0">
+              <div class="custom-card">
+                <div class="custom-card-image">
+                  <img src="./images/programming.png" alt="website development" />
+                </div>
+                <div class="custom-card-title">
+                  <h5>Web App Development</h5>
+                </div>
+                <div class="custom-card-text">
+                  <p>
+                    I architect and build full stack web applications using React, Vuejs, Node.js,
+                    Express.js and adopt any technology stack based on the requirement.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="skillcscont">
-                <h3><span class="big">I</span>nformation Technology skills</h3>
-                <a href="https://github.com/Nagarjuna-PradeepKumar" target="_blank"><span style="color:lawngreen;">Click here to view my GitHub</span></a>
-                <ul style="padding-left: 5%;">
-                    <li>HTML, CSS - flex,Grid</li>
-                    <li>Bootstrap</li>
-                    <li>Javascript</li>
-                    <li>VueJs</li>
-                    <li>ReactJs - Hooks,Redux</li>
-                    <li>NodeJs - HTTP,Websockets</li>
-                    <li>MongoDB -aggregation </li>
-                </ul>
+            <div class="col-12 col-lg-4 mt-5 mt-lg-0">
+              <div class="custom-card">
+                <div class="custom-card-image">
+                  <img src="./images/web-development.png" alt="web app development" />
+                </div>
+                <div class="custom-card-title">
+                  <h5>Hybrid App Development</h5>
+                </div>
+                <div class="custom-card-text">
+                  <p>
+                    I Build Hybrid mobile applications using React Native, Ionic which improves the
+                    user experience and makes customer experience better.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="skillcspic">
-                <img src="./codeing.svg">
+          </div>
+        </div>
+      </section>
+      <section id="workflow">
+        <div class="container">
+          <div class="sub-title text-center" style="margin-left: 0">
+            <span> Work Flow</span>
+          </div>
+          <div class="content-title mt-2 mb-5">
+            <h2 class="text-center">My Work Process</h2>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-2 mt-3 mt-lg-0">
+              <div class="hover-card">
+                <div class="hover-card-image">
+                  <img src="./images/research.png" alt="discover" />
+                </div>
+                <div class="hover-card-title">
+                  <h5>Discover</h5>
+                </div>
+                <div class="hover-card-text">
+                  <p>I conduct user research to identify the problem I want to solve.</p>
+                </div>
+              </div>
             </div>
-        </section>
-
-        <section data-index="2" class="career">
-            <div class="careerkris">
-                <h3><span class="big">K</span>risam Automation</h3>
-                <h5>May-2019 to Mar-2020 as GET</h5>
-                <ul style="padding: 4% 0% 0% 5%; text-align: justify;">
-                    <li>Sucessfully Built and proved MCB testing station for Schneider Electric.</li>
-                    <li>Engaged in proving of medical drains of body fluids machine for medical application.</li>
-                    <li>Worked in building and proving assembly stations for Royal Enfield.</li>
-                </ul>
+            <div class="col-12 col-lg-2 mt-3 mt-lg-0">
+              <div class="hover-card">
+                <div class="hover-card-image">
+                  <img src="./images/presentation.png" alt="define" />
+                </div>
+                <div class="hover-card-title">
+                  <h5>Define</h5>
+                </div>
+                <div class="hover-card-text">
+                  <p>I brainstorm possible design solutions to the identified problem.</p>
+                </div>
+              </div>
             </div>
-            <div class="careerank">
-                <h3><span class="big">A</span>nkusam Engineering</h3>
-                <h5>Nov-2018 to Feb-2019 as Design Intern</h5>
-                <ul style="padding: 4% 0% 0% 5%; text-align: justify;line-height: 150%;">
-                    <li>Design and drafting of pipe bending machines</li>
-                    <li>Conceptual modelling of special purpose machines.</li>
-                </ul>
+            <div class="col-12 col-lg-2 mt-3 mt-lg-0">
+              <div class="hover-card">
+                <div class="hover-card-image">
+                  <img src="./images/light-bulb.png" alt="ideate" />
+                </div>
+                <div class="hover-card-title">
+                  <h5>Ideate</h5>
+                </div>
+                <div class="hover-card-text">
+                  <p>I create wireframes and sketches of the product I’m about to design.</p>
+                </div>
+              </div>
             </div>
-            <div class="careerindpic">
-                <img src="./factory.svg" alt="factory">
+            <div class="col-12 col-lg-2 mt-3 mt-lg-0">
+              <div class="hover-card">
+                <div class="hover-card-image">
+                  <img src="./images/prototype.png" alt="prototype" />
+                </div>
+                <div class="hover-card-title">
+                  <h5>Prototype</h5>
+                </div>
+                <div class="hover-card-text">
+                  <p>I create high fidelity design and prototype the screens.</p>
+                </div>
+              </div>
             </div>
-            <div class="careerwinpic">
-                <img src="./winner.svg" alt="win">
+            <div class="col-12 col-lg-2 mt-3 mt-lg-0">
+              <div class="hover-card">
+                <div class="hover-card-image">
+                  <img src="./images/implementer.png" alt="implement" />
+                </div>
+                <div class="hover-card-title">
+                  <h5>Implement</h5>
+                </div>
+                <div class="hover-card-text">
+                  <p>After designing, I deliver for on-time implementation.</p>
+                </div>
+              </div>
             </div>
-        </section>
-        <section data-index="3" class="contact">
-            <div class="contactleft">
-                <h1>Get in touch !</h1>
-                <img src="./contact.svg" alt="contact" style="width: 50%">
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="py-5">
+        <div class="container">
+          <div class="sub-title text-center" style="margin-left: 0">
+            <span> Contact Me</span>
+          </div>
+          <div class="content-title mt-2 mb-5">
+            <h2 class="text-center">Get In Touch</h2>
+          </div>
+          <div class="text-center mb-5 email-phone">
+            <p><span> email </span>: nagarjun70@gmail.com</p>
+            <p><span>phone</span> : +91 9788-064-445</p>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-1">
+              <div class="contact-link">
+                <a href="mailto:nagarjun70@gmail.com" target="_blank">
+                  <i class="fa fa-envelope-open"></i>
+                </a>
+              </div>
             </div>
-            <div class="contactright">
-                <div class="aboutleftlinkedin"><img src="./phone.svg" alt="Phone-no" style="height: 35px;">&emsp;&emsp;+91&nbsp; 9788-064-445</div>
-                <div class="aboutleftlinkedin"><img src="./mail.svg" alt="E-Mail" style="height: 35px;">&emsp;&emsp;<a href="mailto:nagarjun70@gmail.com">nagarjun70@gmail.com</a> </div>
-                <div class="aboutleftgithub"><img src="./linkedin.svg" alt="linkedin" style="height: 35px; color: ivory;">&emsp;&emsp;<a href="https://www.linkedin.com/in/nagarjuna-pradeep-kumar-a2bb49129/" target="_blank">My LinkedIn</a></div>
-                <div class="aboutleftgithub"><img src="./github.png" alt="GitHub" style="height: 35px; color: ivory;">&emsp;&emsp;<a href="https://github.com/Nagarjuna-PradeepKumar" target="_blank">My GitHub</a></div>
+            <div class="col-1">
+              <div class="contact-link">
+                <a href="tel:+91 9788064445" target="_blank">
+                  <i class="fa fa-phone"></i>
+                </a>
+              </div>
             </div>
-        </section>
+            <div class="col-1">
+              <div class="contact-link">
+                <a href="https://github.com/Nagarjuna-PradeepKumar" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-1">
+              <div class="contact-link">
+                <a
+                  href="https://www.linkedin.com/in/nagarjuna-pradeep-kumar-a2bb49129/"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <script src="./app.js"></script>
-</body>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
-
-
-

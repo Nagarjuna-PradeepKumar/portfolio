@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap");
+html {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+.white-light {
+  color: #b9b9b9;
+}
+
+.theme-color {
+  color: #0fb;
+}
+
+.primary-button {
+  border: none;
+  outline: none;
+  width: 9.7rem;
+  height: 2.4rem;
+  background: #0fb;
+  -webkit-box-shadow: 0 1.6rem 1.6rem rgba(1, 56, 63, 0.25);
+          box-shadow: 0 1.6rem 1.6rem rgba(1, 56, 63, 0.25);
+  border-radius: 3rem;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #303030;
+}
+
+.primary-button:hover {
+  background: #00ffbb;
+  color: #303030;
+  font-weight: bold;
+}
+
+body {
+  color: #fff;
+}
+
+#intorduction,
+#aboutme,
+#myservices,
+#workflow {
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+#intorduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #030303 !important;
+}
+
+#aboutme {
+  background: #111111 !important;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#aboutme:after {
+  content: "";
+  background-image: none;
+}
+
+#myservices,
+#workflow {
+  background: #111111 !important;
+}
+
+#contact {
+  background: #111111 !important;
+  padding-bottom: 100px;
+}
+
+.user-name {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.contact-link {
+  text-align: center;
+}
+
+.contact-link a {
+  color: #0fb;
+  padding: 8px;
+}
+
+.sub-title {
+  color: #0fb;
+  margin-left: 60px;
+}
+
+.sub-title span {
+  position: relative;
+}
+
+.sub-title span:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 50px;
+  top: 50%;
+  margin-left: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #0fb;
+}
+
+.sub-title span:before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 50px;
+  top: 50%;
+  right: 100%;
+  margin-right: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #0fb;
+}
+
+.custom-card {
+  background: #2b2b2b;
+  -webkit-box-shadow: 0 1.6rem 2.4rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0 1.6rem 2.4rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.8rem;
+  width: 100%;
+  padding: 2rem;
+  position: relative;
+  height: 100%;
+}
+
+.custom-card .custom-card-image {
+  position: relative;
+  margin-bottom: 1.2rem;
+}
+
+.custom-card .custom-card-image img {
+  width: 75px;
+  height: 75px;
+}
+
+.custom-card .custom-card-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.custom-card .custom-card-text {
+  color: #dadada;
+}
+
+.hover-card {
+  background: #2b2b2b;
+  border: 1px solid #2b2b2b;
+  -webkit-box-shadow: 0 1.6rem 2.4rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0 1.6rem 2.4rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.8rem;
+  width: 100%;
+  padding: 1rem;
+  position: relative;
+  height: 100%;
+}
+
+.hover-card:hover {
+  border: 1px solid #0fb;
+}
+
+.hover-card .hover-card-image {
+  text-align: center;
+  position: relative;
+  margin-bottom: 1.2rem;
+}
+
+.hover-card .hover-card-image img {
+  width: 50px;
+  height: 50px;
+}
+
+.hover-card .hover-card-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.hover-card .hover-card-text {
+  text-align: center;
+  font-size: 14px;
+  color: #dadada;
+}
+
+.email-phone span {
+  color: #0fb;
+}
+
+@media (min-width: 992px) {
+  .user-name {
+    font-size: 60px;
+  }
+  #aboutme:after {
+    content: "";
+    background-image: url("./images/side-element.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 150px;
+    height: 150px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
